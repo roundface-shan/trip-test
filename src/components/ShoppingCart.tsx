@@ -17,9 +17,9 @@ class ShoppingCart extends React.Component<Props, State> {
         }
     }
     render(){
-        return <div>
-            <button>购物车 2 （件）</button>
-            <div>
+        return <div className={styles.cartContainer}>
+            <button className={styles.button}>购物车 2 （件）</button>
+            <div className={styles.cartDropDown}>
                 <ul>
                     <li>robot1</li>
                     <li>robot2</li>
@@ -28,3 +28,5 @@ class ShoppingCart extends React.Component<Props, State> {
         </div>
     }
 }
+
+export default ShoppingCart;
