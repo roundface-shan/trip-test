@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face{
+  font-family: "YouSheYuFeiTeJianKangTi-2";
+  src: local('YouSheYuFeiTeJianKangTi-2'), url(./assets/fonts/YouSheYuFeiTeJianKangTi-2.ttf) format('truetype');
+}
