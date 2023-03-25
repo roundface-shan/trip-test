@@ -1,4 +1,5 @@
 import React from "react";
+import styles from './ShoppingCart.module.css'
 
 interface Props {
 
@@ -18,6 +19,12 @@ class ShoppingCart extends React.Component<Props, State> {
     render(){
         return <div>
             <button>购物车 2 （件）</button>
+            <div>
+                <ul>
+                    <li>robot1</li>
+                    <li>robot2</li>
+                </ul>
+            </div>
         </div>
     }
 }
