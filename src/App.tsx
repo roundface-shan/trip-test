@@ -3,6 +3,7 @@ import logo from './assets/images/logo.svg';
 import styles from './App.module.css';
 import robots from './mockdata/robots.json';
 import Robot from './components/Robot';
+import ShoppingCart from './components/ShoppingCart';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
         <img src={logo} className={styles.appLogo} alt="logo"/>
         <h1>机器人工厂人渣老板黄鹤和小姨子跑路了，剩下的机器人全部大减价处理</h1>
       </div>
+        <ShoppingCart />
       <div className={styles.robotList}>
         {robots.map(i => <Robot id={i.id} email={i.email} name={i.name}/>)}
       </div>

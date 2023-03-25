@@ -18,8 +18,18 @@ class ShoppingCart extends React.Component<Props, State> {
     }
     render(){
         return <div className={styles.cartContainer}>
-            <button className={styles.button}>购物车 2 （件）</button>
-            <div className={styles.cartDropDown}>
+            <button className={styles.button}
+                onClick={()=>{
+                    this.setState({isOpen: !this.state.isOpen})
+                }}
+            >
+            购物车 2 （件）
+            </button>
+            <div className={styles.cartDropDown}
+                style={{
+                    display: this.state.isOpen ? 'block' : 'none'
+                }}
+            >
                 <ul>
                     <li>robot1</li>
                     <li>robot2</li>
